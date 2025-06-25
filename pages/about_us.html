@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Mini Digital Media</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .card-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+    .card-grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+    .info-card {
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 2rem;
+      color: #ccc;
+      transition: transform 0.3s ease;
+    }
+    .info-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    }
+    .info-card h3 {
+      color: #fbfbfb;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+    .info-card p {
+      line-height: 1.6;
+      font-size: 1.2rem;
+    }
+    .highlight-section {
+      background: linear-gradient(to right, #1a1a1a, #111);
+      border-left: 4px solid #ffffff;
+      padding: 2rem;
+      margin-bottom: 3rem;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .highlight-section:hover {
+      transform: translateY(-5px);
+      background: linear-gradient(to right, #222, #0f0f0f);
+    }
+    .highlight-section h3 {
+      color: #f8f7f7;
+      margin-bottom: 1rem;
+      font-size: 3.3rem;
+    }
+    .highlight-section ul {
+      margin-top: 1rem;
+      padding-left: 1.2rem;
+    }
+    .highlight-section li,p,ul {
+      margin-bottom: 0.5rem;
+      list-style: "✔ ";
+      color: #ccc;
+      font-size: 1.2rem;
+    }
+    @media (max-width: 768px) {
+      .card-grid-3 {
+        grid-template-columns: 1fr;
+      }
+      .card-grid-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="img">
+      <img src="/asset/logo.svg" alt="Mini Digital Media Logo" width="60" height="40" style="filter: invert(1)" />
+      <h2>Mini Digital Media</h2>
+    </div>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="/pages/what_we_do.html">What We Do</a>
+      <a href="/pages/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="services-section">
+    <section class="fade-in" style="margin-bottom: 4rem;">
+      <h1>About Us</h1>
+      <p class="services-intro">
+        At Mini Digital Media, we're not just marketers—we're builders of digital brand experiences. Here's what drives us:
+      </p>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="card-grid-3 fade-in" style="margin-bottom: 4rem;">
+      <div class="info-card">
+        <h3>Who We Are</h3>
+        <p>
+          We are a creative collective of marketers, designers, and developers dedicated to innovation and impact.
+        </p>
+      </div>
+      <div class="info-card">
+        <h3>What We Believe</h3>
+        <p>
+          Creativity should solve problems, not just look pretty. Our strategies are rooted in user data and insight.
+        </p>
+      </div>
+      <div class="info-card">
+        <h3>How We Work</h3>
+        <p>
+          Agile, transparent, and results-driven. We partner with our clients to build what truly matters.
+        </p>
+      </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="card-grid-2 fade-in" style="margin: 4rem 0;">
+      <div class="info-card">
+        <h3>Our Mission</h3>
+        <p>
+          To help businesses scale by blending tech, design, and performance marketing into seamless brand stories.
+        </p>
+      </div>
+      <div class="info-card">
+        <h3>Our Vision</h3>
+        <p>
+          Be the go-to digital force for startups and enterprises alike, delivering growth through innovation.
+        </p>
+      </div>
+    </section>
+
+    <!-- Data Security & Commitment Section -->
+    <section class="fade-in" style="margin: 5rem 0;">
+      <div class="highlight-section">
+        <h3>We Care About Data Security</h3>
+        <p>
+          At Mini Digital Media, safeguarding your data is our top priority. We implement strict security practices,
+          encrypt sensitive information, and remain fully compliant with global data privacy laws such as GDPR.
+        </p>
+        <ul>
+          <li>End-to-end data encryption</li>
+          <li>Role-based access controls</li>
+          <li>Regular audits & compliance checks</li>
+          <li>Transparency and user rights over data</li>
+        </ul>
+      </div>
+
+      <div class="highlight-section">
+        <h3>Our Commitment</h3>
+        <p>
+          We are committed to building trust with our clients and users. Whether you're a startup or an enterprise,
+          our focus remains the same: secure experiences, ethical practices, and results that matter.
+        </p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="about-cta fade-in" style="margin-top: 5rem;">
+      <h2>Let's Create Digital Impact Together</h2>
+      <a href="/pages/contact.html" class="button">Talk to Us</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <h3>Mini Digital Media</h3>
+        <p>Transforming Ideas into Digital Reality.</p>
+      </div>
+      <div class="footer-links">
+        <a href="/pages/what_we_do.html">What We Do</a>
+        <a href="/pages/contact.html">Contact</a>
+      </div>
+      <div class="footer-contact">
+        <p>Email: <a href="mailto:info@minidigitalmedia.in">info@minidigitalmedia.in</a></p>
+        <p>Phone: +91 98765 43210</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Mini Digital Media. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What We Do - Mini Digital Media</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      /* Smooth transitions */
+      .fade-in {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+      }
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      /* Service grid layout */
+      .service-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin-bottom: 5rem;
+      }
+      .service-card {
+        background-color: #1a1a1a;
+        border: 1px solid #333;
+        border-radius: 10px;
+        padding: 2rem;
+        text-align: left;
+        transition: transform 0.3s ease;
+      }
+      .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      }
+      .service-card h2 {
+        color: #f4f3f2;
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+      }
+      .service-card p {
+        font-size: 1.6rem;
+        color: #ccc;
+      }
+      .models-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+      }
+      .modle-card p,ul,li{
+        font-size: 1.2rem;
+      
+
+      }
+      @media (max-width: 768px) {
+        .service-cards,
+        .models-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header>
+      <div class="img">
+        <img src="/asset/logo.svg" alt="Mini Digital Media Logo" width="60" height="40" style="filter: invert(1)" />
+        <h2>Mini Digital Media</h2>
+      </div>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="/pages/about_us.html">About Us</a>
+        <a href="/pages/contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="services-section">
+      <section class="fade-in">
+        <h1>What We Do</h1>
+        <p class="services-intro">
+          We provide cutting-edge digital marketing solutions to elevate your brand and drive real results. Here’s how we help businesses thrive in the digital world:
+        </p>
+      </section>
+
+      <!-- Service Cards -->
+      <section class="service-cards fade-in">
+        <div class="service-card">
+          <h2>App Promotion</h2>
+          <p>Boost visibility and installs through premium mobile ad networks and OEM integrations.</p>
+        </div>
+        <div class="service-card">
+          <h2>Performance Marketing</h2>
+          <p>Maximize ROI with data-driven CPI, CPA, CPL, and CPS campaigns tailored to your audience.</p>
+        </div>
+        <div class="service-card">
+          <h2>Lead Generation</h2>
+          <p>We deliver high-intent leads to fuel your growth through targeted campaigns and smart segmentation.</p>
+        </div>
+        <div class="service-card">
+          <h2>Video Production</h2>
+          <p>Tell your story through cinematic content that connects, convinces, and converts.</p>
+        </div>
+        <div class="service-card">
+          <h2>UI/UX Design</h2>
+          <p>We craft interfaces that are beautiful, usable, and built for conversion across devices.</p>
+        </div>
+        <div class="service-card">
+          <h2>SEO & Paid Ads</h2>
+          <p>Dominate search and social with expertly managed organic and PPC strategies that perform.</p>
+        </div>
+      </section>
+
+      <!-- Performance Models -->
+      <section class="performance-models fade-in">
+        <div class="container">
+          <h2 style="font-size: 4rem , ">Performance Pricing Models</h2>
+          <div class="models-grid">
+            <div class="model-card">
+              <h3>CPI</h3>
+              <p>Cost Per Install – Pay only when your app is installed by users.</p>
+              <ul>
+                <li>Fraud-protected traffic</li>
+                <li>Real-user installs</li>
+                <li>OEM & SDK inventory</li>
+              </ul>
+            </div>
+            <div class="model-card">
+              <h3>CPS</h3>
+              <p>Cost Per Sale – You’re billed only when a verified sale occurs.</p>
+              <ul>
+                <li>Ideal for e-commerce</li>
+                <li>Performance-based billing</li>
+                <li>Detailed sale tracking</li>
+              </ul>
+            </div>
+            <div class="model-card">
+              <h3>CPA</h3>
+              <p>Cost Per Action – Pay when users take your desired action.</p>
+              <ul>
+                <li>Sign-ups or form fills</li>
+                <li>Custom actions supported</li>
+                <li>Full conversion visibility</li>
+              </ul>
+            </div>
+            <div class="model-card">
+              <h3>CPM</h3>
+              <p>Cost Per Mille – Pay a flat rate for every 1,000 ad impressions.</p>
+              <ul>
+                <li>Great for brand awareness</li>
+                <li>High volume reach</li>
+                <li>Impression-based exposure</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="about-cta fade-in">
+        <h2>Let’s Grow Your Business Together</h2>
+        <a href="/pages/contact.html" class="button">Get In Touch</a>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <h3>Mini Digital Media</h3>
+          <p>Transforming Ideas into Digital Reality.</p>
+        </div>
+        <div class="footer-links">
+          <a href="/pages/about_us.html">About Us</a>
+          <a href="/pages/what_we_do.html">What We Do</a>
+          <a href="/pages/contact.html">Contact</a>
+        </div>
+        <div class="footer-contact">
+          <p>Email: <a href="mailto:info@minidigitalmedia.in">info@minidigitalmedia.in</a></p>
+          <p>Phone: +91 98765 43210</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Mini Digital Media. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="../logic.js"></script>
+    <script>
+      // Intersection Observer to add fade-in
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
